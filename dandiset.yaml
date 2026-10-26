@@ -3,7 +3,16 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.9/context.json
-about: []
+about:
+- identifier: http://purl.obolibrary.org/obo/UBERON_0014370
+  name: extrastriate cortex
+  schemaKey: Anatomy
+- identifier: https://www.cognitiveatlas.org/concept/id/trm_502c139d5ed78
+  name: crowding
+  schemaKey: GenericType
+- identifier: https://www.cognitiveatlas.org/concept/id/trm_5fjcydtc5dQY5
+  name: visual shape recognition
+  schemaKey: GenericType
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -34,8 +43,12 @@ assetsSummary:
 citation: Kim, Taekjun; Pasupathy, Anitha (2026) Neural correlates of crowding in
   macaque area V4 (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001358/draft
 contributor:
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/00cvxb145
+    name: University of Washington
+    schemaKey: Affiliation
   email: taekjunkim1223@gmail.com
+  identifier: 0000-0002-8376-8861
   includeInCitation: true
   name: Kim, Taekjun
   roleName:
@@ -45,7 +58,12 @@ contributor:
   - dcite:Investigation
   - dcite:FormalAnalysis
   schemaKey: Person
-- email: pasupat@uw.edu
+- affiliation:
+  - identifier: https://ror.org/00cvxb145
+    name: University of Washington
+    schemaKey: Affiliation
+  email: pasupat@uw.edu
+  identifier: 0000-0003-3808-8063
   includeInCitation: true
   name: Pasupathy, Anitha
   roleName:
@@ -56,12 +74,14 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 - awardNumber: R01 EY018839, R01 EY029601, P30 EY01730
+  identifier: https://ror.org/03wkg3b53
   includeInCitation: false
   name: National Eye Institute
   roleName:
   - dcite:Funder
   schemaKey: Organization
 - awardNumber: P51 OD010425
+  identifier: https://ror.org/01cwqze88
   includeInCitation: false
   name: National Institute of Health
   roleName:
@@ -76,8 +96,13 @@ ethicsApproval: []
 id: DANDI:001358/draft
 identifier: DANDI:001358
 keywords:
-- object recognition, primate, saliency computation, shape perception, temporal dynamics,
-  ventral visual pathway
+- crowding
+- object recognition
+- saliency computation
+- shape perception
+- temporal dynamics
+- ventral visual pathway
+- visual clutter
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
